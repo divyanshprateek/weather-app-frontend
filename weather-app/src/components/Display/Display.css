@@ -1,0 +1,11 @@
+.weather-display {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.weather-display .items {
+    margin: 10px;
+}
