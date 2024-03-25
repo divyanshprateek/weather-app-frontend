@@ -22,7 +22,7 @@ const Home = () => {
         zip_codes: zipCodes
       }),
     };
-    await fetch(`${process.env.APP_URL}/api/v1/fetch_weather_data`, options)
+    await fetch(`http://65.2.34.197:5000/api/v1/fetch_weather_data`, options)
       .then(res => res.json())
       .then(result => {
         setWeatherData(result.data ?? [])
